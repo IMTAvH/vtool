@@ -16,6 +16,8 @@ output: github_document
 # `{vtool}`
 
 <!-- badges: start -->
+![](inst/app/www/vtool_logo_1.svg){ width=25% }
+
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 

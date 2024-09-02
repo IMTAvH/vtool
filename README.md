@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+<img src="inst/app/www/vtool_logo_1.svg" style="width:25.0%" />
+
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
@@ -34,30 +36,27 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2024-09-01 15:19:37 -05"
+#> [1] "2024-09-01 23:43:06 -05"
 ```
 
 Here are the tests results and package coverage:
 
 ``` r
 devtools::check(quiet = TRUE)
-#> ══ Documenting ═════════════════════════════════════════════════════════════════
-#> ℹ Installed roxygen2 version (7.3.2) doesn't match required (7.1.1)
-#> ✖ `check()` will not re-document this package
+#> ℹ Loading vtool
 #> ── R CMD check results ─────────────────────────────────── vtool 0.0.0.9000 ────
-#> Duration: 8.1s
+#> Duration: 9s
 #> 
-#> ❯ checking package subdirectories ... NOTE
-#>   Problems with news in ‘NEWS.md’:
-#>   No news entries found.
-#> 
-#> 0 errors ✔ | 0 warnings ✔ | 1 note ✖
+#> 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 ```
 
 ``` r
 covr::package_coverage()
-#> vtool Coverage: 0.00%
+#> vtool Coverage: 68.42%
 #> R/app_config.R: 0.00%
+#> R/app_server.R: 0.00%
 #> R/app_ui.R: 0.00%
 #> R/run_app.R: 0.00%
+#> R/mod_panel_contenido.R: 100.00%
+#> R/mod_panel_superior.R: 100.00%
 ```

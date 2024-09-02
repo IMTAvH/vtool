@@ -6,13 +6,6 @@
 #' @noRd
 app_server <- function(input, output, session) {
   # Your application server logic
-  mod_principal_tab_server(
-    id = "tab1"
-  )
-  mod_principal_tab_server(
-    id = "tab2"
-  )
-  mod_principal_tab_server(
-    id = "tab3"
-  )
+  mod_panel_superior_server("panel_superior_1")
+
 }

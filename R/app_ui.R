@@ -2,28 +2,21 @@
 #'
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
-#' @import shiny bslib
+#' @import shiny
 #' @noRd
 app_ui <- function(request) {
+
   tagList(
+
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    bslib::page_navbar(
+    fluidPage(
 
-      title = card_image(
-        height = "75", width = "75",
-        file = "~/Documents/rprojects/vtool/inst/app/www/vtool_logo_2.svg"
-      ),
-
-      window_title = "",
-      id = "my_navbar",
-      theme = bslib::bs_theme(version = 5, preset = "yeti", primary = "#00719a"),
-      mod_principal_tab_ui(id = "tab1"),
-      mod_principal_tab_ui(id = "tab2", "Datos", "my_data"),
-      mod_principal_tab_ui(id = "tab3", "Composición", "my_community")
+      mod_panel_superior_ui("panel_superior_1")
 
     )
+
 
   )
 }
