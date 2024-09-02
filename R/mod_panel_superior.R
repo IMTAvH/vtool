@@ -21,9 +21,9 @@ mod_panel_superior_ui <- function(id) {
 
       id = ns("my_navbar"),
 
-      bslib::nav_panel(title = "Inicio", value = "start", mod_panel_contenido_ui("panel_contenido_1")),
-      bslib::nav_panel(title = "Datos", value = "my_data", mod_panel_contenido_ui("panel_contenido_2")),
-      bslib::nav_panel(title = "Composicion", value = "my_community", mod_panel_contenido_ui("panel_contenido_3")),
+      bslib::nav_panel(title = "Inicio", value = "start", mod_panel_inicio_contenido_ui("panel_inicio_contenido_1")),
+      bslib::nav_panel(title = "Datos", value = "my_data", mod_panel_datos_contenido_ui("panel_datos_contenido_1")),
+      bslib::nav_panel(title = "Composicion", value = "my_community", mod_panel_composicion_contenido_ui("panel_composicion_contenido_1")),
 
       theme = bslib::bs_theme(version = 5, preset = "yeti", primary = "#00719a"),
 
@@ -40,9 +40,9 @@ mod_panel_superior_ui <- function(id) {
 mod_panel_superior_server <- function(id){
   moduleServer(id, function(input, output, session){
     ns <- session$ns
-    mod_panel_contenido_server("panel_contenido_1")
-    mod_panel_contenido_server("panel_contenido_2")
-    mod_panel_contenido_server("panel_contenido_3")
+    mod_panel_inicio_contenido_server("panel_inicio_contenido_1")
+    mod_panel_datos_contenido_server("panel_datos_contenido_1")
+    mod_panel_composicion_contenido_server("panel_composicion_contenido_1")
 
   })
 }

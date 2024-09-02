@@ -7,7 +7,7 @@
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
-mod_panel_contenido_ui <- function(id) {
+mod_panel_inicio_contenido_ui <- function(id) {
   ns <- NS(id)
   tagList(
 
@@ -97,7 +97,7 @@ mod_panel_contenido_ui <- function(id) {
 #' panel_contenido Server Functions
 #'
 #' @noRd
-mod_panel_contenido_server <- function(id){
+mod_panel_inicio_contenido_server <- function(id){
   moduleServer(id, function(input, output, session){
     ns <- session$ns
 
@@ -105,7 +105,7 @@ mod_panel_contenido_server <- function(id){
 }
 
 ## To be copied in the UI
-# mod_panel_contenido_ui("panel_contenido_1")
+# mod_panel_inicio_contenido_ui("panel_inicio_contenido_1")
 
 ## To be copied in the server
-# mod_panel_contenido_server("panel_contenido_1")
+# mod_panel_inicio_contenido_server("panel_inicio_contenido_1")
